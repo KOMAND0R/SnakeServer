@@ -1,0 +1,19 @@
+html
+    head
+        title Snake Game
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet' href='/css/style.css')
+        style.
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+    body
+        nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+            a.navbar-brand(href='/') Snake the Game menu
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+            a.nav-link(href='/snake') Restart!
+        canvas#snake(width='608', height='608')
+        script(src='js/snake.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')

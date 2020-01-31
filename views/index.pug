@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    if !user
+        div.messages
+            br
+            div.alert.alert-info To save your progress in leaderboard, you need to log in!
+    img(src='https://avatars.mds.yandex.net/get-pdb/1756889/16f9d666-6515-487f-be37-514786510c91/s1200')
+    //canvas(id='mycanvas' width='320' height='480')
+
